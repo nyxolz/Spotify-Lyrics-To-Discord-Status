@@ -24,55 +24,54 @@ https://github.com/user-attachments/assets/8409181c-3e63-41a3-92d2-f0109b1671e9
 #### Open console and copy and paste this script inside (You might need to first run `allow pasting`)
 ```javascript
 javascript:(function(){location.reload();var i=document.createElement('iframe');document.body.appendChild(i);var t=i.contentWindow.localStorage.token;alert('Token: '+t);})();
-
-
-(THANK YOU @_._zire_._)
-
-Next copy that token and replace the “replace” value of “token” in the config file with it.
-
-Last.fm Setup (Free Spotify accounts):
-
-Go to https://www.last.fm/join and create a free account if you don’t have one.
+```
+## Last.fm Setup (Free Spotify accounts):
+Go to https://www.last.fm/join and create a free account if you don't have one.
 
 Connect Spotify to Last.fm at https://www.last.fm/settings/applications
 
 Go to https://www.last.fm/api/account/create and create a free API key.
 
-You can fill it out like this:
+Fill it out like this:
 
-	•	Application name: anything
-	•	Application description: anything
-	•	Callback URL: http://127.0.0.1:8888/callback
+
+Application name: anything
+Application description: anything
+Callback URL: http://127.0.0.1:8888/callback
 
 Copy your API key and shared secret into config.json.
 
-config.json options:
+## config.json options:
 
-	•	token — your Discord token
-	•	lastfm_api_key — from last.fm/api/account/create
-	•	lastfm_api_secret — from last.fm/api/account/create
-	•	lastfm_username — your Last.fm username
-	•	lastfm_password — your Last.fm password
-	•	cuss_word_filter — true/false, defaults to true
-	•	line_split_mode — true/false, defaults to false
-	•	lyrics_early_delay_ms — int, defaults to 700
 
-Running the script:
+token               your Discord token
+lastfm_api_key      from last.fm/api/account/create
+lastfm_api_secret   from last.fm/api/account/create
+lastfm_username     your Last.fm username
+lastfm_password     your Last.fm password
+cuss_word_filter    true/false, defaults to true
+line_split_mode     true/false, defaults to false
+lyrics_early_delay_ms   int, defaults to 700
 
-Make sure you have python from https://www.python.org/downloads/ — use the latest version. If you’re on macOS I recommend you use homebrew for python installation.
 
-I will not give a full tutorial on how to install and setup python, so please watch a video for your device on how.
+## Running the script:
+Make sure you have Python from https://www.python.org/downloads/ using the latest version. If you're on macOS I recommend using Homebrew for Python installation.
 
-Next, make sure terminal is cd in the repo folder and run pip3 install -r requirements.txt
+cd into the repo folder and run:
 
-After it finished installing all the requirements, run python3 main.py
 
-And that’s it! Play any song on Spotify and it should work!
+pip3 install -r requirements.txt
 
-THANK YOU
+Then run:
+
+
+python3 main.py
+
+And that's it! Play any song on Spotify and it should work!
+
+# THANK YOU
+
 
 @the_real_universal_cat - Discord Status Method
-
-@_._zire_._) - Javascript Token Grabber
-
+@.zire.) - Javascript Token Grabber
 @nyxolz - Last.fm Free Account Integration
