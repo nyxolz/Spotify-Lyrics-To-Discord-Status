@@ -116,10 +116,13 @@ def main():
     line_split_enabled = config.get("line_split_mode", False)
     
     spotify_manager = SpotifyLyricsManager(
-        client_id=config["spotify_client_id"],
-        client_secret=config["spotify_client_secret"],
-        redirect_uri=config["spotify_redirect_uri"],
-        early_delay_ms=config.get("lyrics_early_delay_ms", 700)
+    early_delay_ms=config.get("lyrics_early_delay_ms", 700),
+    lastfm_api_key=config["lastfm_api_key"],
+    lastfm_api_secret=config["lastfm_api_secret"],
+    lastfm_username=config["lastfm_username"],
+    lastfm_password_hash=config["lastfm_password"]
+)
+
     )
 
     last_status = None
