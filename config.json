@@ -1,10 +1,6 @@
 {
-  "token": "replace",
-  "spotify_lyrics_mode": true,
-  "spotify_client_id": "replace",
-  "spotify_client_secret": "replace",
-  "spotify_redirect_uri": "http://127.0.0.1:8888/callback",
-  "lyrics_early_delay_ms": 400,
-  "cuss_word_filter": false,
-  "line_split_mode": false
+  "lastfm_api_key": "replace with api key",
+  "lastfm_api_secret": "api secret here",
+  "lastfm_username": "last.fm user",
+  "lastfm_password": "last.fm password"
 }
