@@ -1,6 +1,10 @@
 {
-  "lastfm_api_key": "replace with api key",
-  "lastfm_api_secret": "api secret here",
-  "lastfm_username": "last.fm user",
-  "lastfm_password": "last.fm password"
+  "token": "your discord token here",
+  "lastfm_api_key": "your api key",
+  "lastfm_api_secret": "your api secret",
+  "lastfm_username": "your username",
+  "lastfm_password": "your password",
+  "cuss_word_filter": true,
+  "line_split_mode": false,
+  "lyrics_early_delay_ms": 700
 }

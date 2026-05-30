@@ -34,6 +34,10 @@ class SpotifyLyricsManager:
             track_id = f"{artist}_{track_name}".lower().replace(" ", "_")
             try:
                 duration_ms = int(np.get_duration()) * 1000
+                if duration_ms <= 0:
+                    duration_ms = 240000
+                if duration_ms <= 0:
+                    duration_ms = 240000
             except Exception:
                 duration_ms = 240000
             if track_id != self.current_track_id:
